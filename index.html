@@ -15,7 +15,7 @@
 
   <body>
     <!-- MAIN DIV -->
-    <div class="h-[685px] flex w-[1150px] bg-white mx-auto">
+    <div class="h-screen flex w-[1150px] bg-white mx-auto">
       <!-- LEFT SIDEBAR -->
       <aside
         class="p-2.5 w-[250px] h-full font-roboto text-[1.2rem] font-normal text-black flex flex-col gap-4 sticky top-0"
@@ -215,6 +215,18 @@
             </nav>
           </div>
         </header>
+        <div class="h-[110px] flex flex-col p-3">
+          <div class="flex">
+            <img
+              class="w-[37px] h-[37px]"
+              src="https://ik.imagekit.io/8vdv1tq52/Me.png?updatedAt=1696611426641"
+              alt=""
+            />
+            <div>
+
+            </div>
+          </div>
+        </div>
       </main>
       <!-- RIGHT SIDE -->
       <aside
@@ -256,9 +268,7 @@
             />
           </div>
         </form>
-        <div
-          class="overflow-auto overflow: -moz-scrollbars-none flex flex-col gap-3"
-        >
+        <div class="overflow-auto no-scrollbar flex flex-col gap-3">
           <div class="bg-xxlightGray p-3 rounded-xl flex flex-col gap-2">
             <h1 class="font-bold text-lg">Subscribe to Premium</h1>
             <h3 class="text-sm font-bold">
@@ -274,11 +284,11 @@
             </div>
           </div>
           <!-- BELOW SUBSCRIPTION -->
-          <div class="bg-xxlightGray p-3 rounded-lg flex flex-col gap-4">
+          <div class="bg-xxlightGray p-3 rounded-lg flex flex-col gap-6">
             <h1 class="font-bold text-lg">What's happening</h1>
             <div class="flex justify-between">
               <div>
-                <h2 class="text-lightGray">NFL.LIVE</h2>
+                <h2 class="text-lightGray text-xs">NFL.LIVE</h2>
                 <h2 class="font-bold">Jaguars at Bills</h2>
               </div>
               <img
@@ -289,22 +299,22 @@
             </div>
             <div>
               <h1 class="font-bold">#TheBigBillionDays</h1>
-              <h2>
+              <h2 class="text-darkGray">
                 Grab latest deals on India's Craziest Sale<br />(8th to 15th
-                Oct) #SaleIsLive
+                Oct)<span class="text-blue">#SaleIsLive</span>
               </h2>
-              <p class="text-xs">Promoted by Flipkart</p>
+              <p class="text-xs text-darkGray">Promoted by Flipkart</p>
             </div>
-            <div>
+            <div class="flex justify-between">
               <div>
-                <p class="text-xs">Politics.Trending</p>
+                <p class="text-xs text-darkGray">Politics.Trending</p>
                 <h3 class="font-bold">#Israel</h3>
-                <p class="text-xs">2.04M posts</p>
+                <p class="text-xs text-darkGray">2.04M posts</p>
               </div>
               <svg
                 viewBox="0 0 24 24"
                 aria-hidden="true"
-                class="w-[24px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
+                class="w-[22px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
               >
                 <g>
                   <path
@@ -313,16 +323,19 @@
                 </g>
               </svg>
             </div>
-            <div>
+            <div class="flex justify-between">
               <div>
-                <p class="text-xs">Sports.Trending</p>
+                <p class="text-xs text-darkGray">Sports.Trending</p>
                 <h3 class="font-bold">#ViratKohli𓃵</h3>
-                <p class="text-xs">Trending with Chase Master #CWC23</p>
+                <p class="text-xs text-darkGray">
+                  Trending with Chase Master
+                  <span class="text-blue">#CWC23</span>
+                </p>
               </div>
               <svg
                 viewBox="0 0 24 24"
                 aria-hidden="true"
-                class="w-[24px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
+                class="w-[22px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
               >
                 <g>
                   <path
@@ -331,16 +344,16 @@
                 </g>
               </svg>
             </div>
-            <div>
+            <div class="flex justify-between">
               <div>
-                <p class="text-xs">Politics.Trending</p>
+                <p class="text-xs text-darkGray">Politics.Trending</p>
                 <h3 class="font-bold">#IsraelPalestineWar</h3>
-                <p class="text-xs">133K posts</p>
+                <p class="text-xs text-darkGray">133K posts</p>
               </div>
               <svg
                 viewBox="0 0 24 24"
                 aria-hidden="true"
-                class="w-[24px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
+                class="w-[22px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
               >
                 <g>
                   <path
@@ -349,7 +362,7 @@
                 </g>
               </svg>
             </div>
-            <h1>Show more</h1>
+            <h1 class="text-blue">Show more</h1>
           </div>
         </div>
       </aside>
