@@ -860,6 +860,10 @@ video {
   fill: currentColor;
 }
 
+.fill-blue {
+  fill: #1DA1F2;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
