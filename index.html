@@ -15,11 +15,11 @@
 
   <body>
     <!-- MAIN DIV -->
-    <div class="h-screen flex w-[1150px] bg-white mx-auto container">
+    <div class="h-screen flex md:w-[1150px] bg-white mx-auto container w-full">
       <!-- LEFT SIDEBAR -->
-      <aside class="w-[250px] h-full"></aside>
+
       <aside
-        class="p-2.5 w-[250px] h-full font-roboto text-[1.2rem] font-normal text-black flex flex-col fixed top-0 border-r justify-between"
+        class="hidden md:flex p-2.5 w-[250px] h-full font-roboto text-[1.2rem] font-normal text-black flex-col border-r gap-6"
         id="left"
       >
         <div class="">
@@ -453,7 +453,7 @@
       </main>
       <!-- RIGHT SIDE -->
       <aside
-        class="w-[350px] h-full pt-1 pl-6 text-black flex flex-col gap-4 fixed right-24 justify-between border-l"
+        class="hidden md:flex w-[350px] h-full pt-1 pl-6 text-black flex-col gap-4 justify-between border-l"
         id="right"
       >
         <form>
