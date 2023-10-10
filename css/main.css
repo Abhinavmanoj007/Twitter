@@ -671,10 +671,6 @@ video {
   height: 60px;
 }
 
-.h-\[75px\] {
-  height: 75px;
-}
-
 .h-auto {
   height: auto;
 }
@@ -856,12 +852,12 @@ video {
   --tw-bg-opacity: 0.8;
 }
 
-.fill-current {
-  fill: currentColor;
-}
-
 .fill-blue {
   fill: #1DA1F2;
+}
+
+.fill-current {
+  fill: currentColor;
 }
 
 .p-2 {
