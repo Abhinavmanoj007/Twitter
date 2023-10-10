@@ -19,7 +19,7 @@
       <!-- LEFT SIDEBAR -->
       <aside class="w-[250px] h-full"></aside>
       <aside
-        class="p-2.5 w-[250px] h-full font-roboto text-[1.2rem] font-normal text-black flex flex-col gap-4 fixed top-0"
+        class="p-2.5 w-[250px] h-full font-roboto text-[1.2rem] font-normal text-black flex flex-col gap-4 fixed top-0 border-r"
         id="left"
       >
         <div class="h-[50px]">
@@ -176,11 +176,11 @@
           </svg>
           <h1>More</h1>
         </div>
-        <div
-          class="py-2 px-2 h-[60px] w-[200px] bg-blue rounded-full flex justify-center"
+        <button
+          class="py-3.5 px-24 rounded-full bg-blue text-white font-bold self-start text-sm"
         >
-          <h1 class="font-semibold text-xxlightGray text-base">Post</h1>
-        </div>
+          Post
+        </button>
         <div class="h-[75px]"></div>
         <div class="flex gap-3">
           <img
@@ -206,27 +206,28 @@
         </div>
       </aside>
       <!-- MIDDLE ITEMS -->
-      <main class="w-[530px] h-full border-x" id="middle font-roboto">
-        <header
-          class="w-full h-[100px] border-b sticky top-0 inset-0 z-10 bg-white backdrop-blur-lg"
-        >
-          <div class="p-3 flex flex-col gap-6">
-            <h1 class="font-bold text-[1.2rem]">Home</h1>
-            <nav class="flex justify-center gap-[15rem] text-sm font-bold">
-              <h2>For you</h2>
-              <h2>Following</h2>
-            </nav>
-          </div>
-        </header>
-        <div class="overflow-auto no-scrollbar">
-          <div class="h-[120px] border-b p-3">
+      <main class="w-[542px] h-full font-roboto" id="middle ">
+        <div>
+          <header
+            class="w-full h-[100px] border-b sticky top-0 bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg"
+          >
+            <div class="p-3 flex flex-col gap-6">
+              <h1 class="font-bold text-[1.2rem]">Home</h1>
+              <nav class="flex justify-center gap-[15rem] text-sm font-bold">
+                <h2>For you</h2>
+                <h2>Following</h2>
+              </nav>
+            </div>
+          </header>
+
+          <div class="h-[120px] border-b p-3 flex flex-col justify-between">
             <div class="flex">
               <img
                 class="w-[37px] h-[37px]"
                 src="https://ik.imagekit.io/8vdv1tq52/Me.png?updatedAt=1696611426641"
                 alt=""
               />
-              <div class="p-2 flex flex-col gap-3">
+              <div class="p-2 flex flex-col justify-between">
                 <textarea
                   name=""
                   id=""
@@ -316,7 +317,7 @@
             </div>
           </div>
           <!-- CONTENT 1 -->
-          <div class="h-[550px] border-b flex flex-col p-3">
+          <div class="h-auto border-b flex flex-col p-3">
             <div class="flex gap-2">
               <img
                 class="rounded-full w-[40px] h-[40px]"
@@ -360,7 +361,51 @@
             </div>
           </div>
           <!-- CONTENT 2 -->
-          <div class="h-[500px] border-b flex flex-col p-3">
+          <div class="h-auto border-b flex flex-col p-3">
+            <div class="flex gap-2">
+              <img
+                class="rounded-full w-[40px] h-[40px]"
+                src="https://pbs.twimg.com/profile_images/1440624750808625171/7kSNddJC_bigger.jpg"
+                alt="👨🏻&zwj;💻"
+              />
+              <div class="flex flex-col gap-2">
+                <div>
+                  <div class="flex gap-2">
+                    <p class="text-sm font-bold my-auto">Florin Pop</p>
+
+                    <img
+                      src="https://abs-0.twimg.com/emoji/v2/svg/1f468-1f3fb-200d-1f4bb.svg"
+                      alt=""
+                      class="w-[17px]"
+                    />
+                    <svg
+                      viewBox="0 0 22 22"
+                      aria-label="Verified account"
+                      role="img"
+                      class="w-[17px] r-1cvl2hr r-4qtqp9 r-yyyyoo r-1xvli5t r-9cviqr r-f9ja8p r-og9te1 r-bnwqim r-1plcrui r-lrvibr"
+                      data-testid="icon-verified"
+                    >
+                      <g>
+                        <path
+                          d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"
+                        ></path>
+                      </g>
+                    </svg>
+
+                    <p class="text-xs my-auto text-darkGray">
+                      @florinpop1705 . 2hr
+                    </p>
+                  </div>
+                </div>
+                <!-- div add -->
+                <p class="text-sm">New jersey.</p>
+                <img class="rounded-lg" src="./img/Messi.jpeg" alt="" />
+              </div>
+              <!-- second div -->
+            </div>
+          </div>
+          <!-- CONTENT THREE -->
+          <div class="h-auto border-b flex flex-col p-3">
             <div class="flex gap-2">
               <img
                 class="rounded-full w-[40px] h-[40px]"
@@ -407,13 +452,13 @@
       </main>
       <!-- RIGHT SIDE -->
       <aside
-        class="w-[350px] h-full pt-1 pl-6 text-black flex flex-col gap-3 fixed right-24"
+        class="w-[350px] h-full pt-1 pl-6 text-black flex flex-col gap-4 fixed right-24 justify-between border-l"
         id="right"
       >
         <form>
           <label
             for="default-search"
-            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+            class="mb-2 text-sm font-medium text-gray-900 sr-only"
             >Search</label
           >
           <div class="relative">
@@ -421,7 +466,7 @@
               class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
             >
               <svg
-                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                class="w-4 h-4 text-gray-500"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -439,7 +484,7 @@
             <input
               type="search"
               id="default-search"
-              class="block w-full p-3 pl-10 text-sm text-darkGray rounded-full bg-gray-100 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-darkGray dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="block w-full p-3 pl-10 text-sm text-darkGray rounded-full bg-gray-100"
               placeholder="Search"
               required
             />
@@ -454,13 +499,15 @@
             </h3>
 
             <button
-              class="text-white bg-black font-bold rounded-full text-sm py-1.5 px-4 inline"
+              class="text-white bg-black font-bold rounded-full text-sm py-1.5 px-4 self-start"
             >
               Subscribe
             </button>
           </div>
           <!-- BELOW SUBSCRIPTION -->
-          <div class="bg-xxlightGray p-3 rounded-lg flex flex-col gap-6">
+          <div
+            class="bg-xxlightGray p-3 rounded-lg flex flex-col gap-6 justify-between"
+          >
             <h1 class="font-bold text-xl">What's happening</h1>
             <div class="flex justify-between">
               <div>
@@ -543,5 +590,6 @@
         </div>
       </aside>
     </div>
+    <script src="./dark.js"></script>
   </body>
 </html>
