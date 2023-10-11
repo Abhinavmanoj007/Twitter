@@ -16,6 +16,7 @@ module.exports = {
         lightGray: "#AAB8C2",
         xlightGray: "#E1E8ED",
         xxlightGray: "#F5F8FA",
+        darkFont: "#e7e9ea",
       },
     },
   },
