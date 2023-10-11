@@ -803,6 +803,10 @@ video {
   overflow: auto;
 }
 
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1102,6 +1106,96 @@ video {
 .after\:top-\[2px\]::after {
   content: var(--tw-content);
   top: 2px;
+}
+
+.after\:left-\[px\]::after {
+  content: var(--tw-content);
+  left: px;
+}
+
+.after\:left-\[5px\]::after {
+  content: var(--tw-content);
+  left: 5px;
+}
+
+.after\:left-\[42px\]::after {
+  content: var(--tw-content);
+  left: 42px;
+}
+
+.after\:left-\[44px\]::after {
+  content: var(--tw-content);
+  left: 44px;
+}
+
+.after\:left-\[8px\]::after {
+  content: var(--tw-content);
+  left: 8px;
+}
+
+.after\:left-\[80px\]::after {
+  content: var(--tw-content);
+  left: 80px;
+}
+
+.after\:left-\[0px\]::after {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.after\:left-\[90px\]::after {
+  content: var(--tw-content);
+  left: 90px;
+}
+
+.after\:left-\[9px\]::after {
+  content: var(--tw-content);
+  left: 9px;
+}
+
+.after\:left-\[93px\]::after {
+  content: var(--tw-content);
+  left: 93px;
+}
+
+.after\:left-\[95px\]::after {
+  content: var(--tw-content);
+  left: 95px;
+}
+
+.after\:top-\[px\]::after {
+  content: var(--tw-content);
+  top: px;
+}
+
+.after\:top-\[6px\]::after {
+  content: var(--tw-content);
+  top: 6px;
+}
+
+.after\:top-\[8px\]::after {
+  content: var(--tw-content);
+  top: 8px;
+}
+
+.after\:top-\[10px\]::after {
+  content: var(--tw-content);
+  top: 10px;
+}
+
+.after\:top-\[9px\]::after {
+  content: var(--tw-content);
+  top: 9px;
+}
+
+.after\:top-\[9\2c 5px\]::after {
+  content: var(--tw-content);
+  top: 9,5px;
+}
+
+.after\:top-\[9\.5px\]::after {
+  content: var(--tw-content);
+  top: 9.5px;
 }
 
 .after\:h-5::after {
