@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="" lang="en">
+<html class="dark:bg-gray-900" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
     />
   </head>
 
-  <body class="dark:bg-gray-900">
+  <body>
     <!-- MAIN DIV -->
     <div
       class="h-screen flex md:w-[1150px] bg-white dark:bg-gray-900 mx-auto container w-full dark:text-darkFont"
@@ -215,7 +215,25 @@
             class="w-full h-[100px] border-b dark:border-b-gray-800 sticky top-0 bg-white dark:bg-gray-900 bg-opacity-80 backdrop-filter backdrop-blur-lg"
           >
             <div class="p-3 flex flex-col gap-6">
-              <h1 class="font-bold text-[1.2rem]">Home</h1>
+              <div class="flex justify-between">
+                <h1 class="font-bold text-[1.2rem]">Home</h1>
+                <div>
+                  <label
+                    class="relative inline-flex items-center cursor-pointer"
+                  >
+                    <input type="checkbox" value="" class="sr-only peer" />
+
+                    <div
+                      onclick="document.body.classList.toggle('dark')"
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                    ></div>
+                    <span
+                      class="text-sm font-medium text-gray-900 dark:text-gray-300 "
+                      >Dark Mode</span
+                    >
+                  </label>
+                </div>
+              </div>
               <nav class="flex justify-around text-sm font-bold">
                 <h2>For you</h2>
                 <h2>Following</h2>
