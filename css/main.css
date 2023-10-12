@@ -584,6 +584,10 @@ video {
   pointer-events: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -605,8 +609,40 @@ video {
   left: 0px;
 }
 
+.left-40 {
+  left: 10rem;
+}
+
+.left-64 {
+  left: 16rem;
+}
+
+.right-40 {
+  right: 10rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-0\.5 {
+  right: 0.125rem;
 }
 
 .mx-auto {
@@ -751,6 +787,10 @@ video {
   resize: none;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -793,14 +833,6 @@ video {
 
 .overflow-auto {
   overflow: auto;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.overflow-y-scroll {
-  overflow-y: scroll;
 }
 
 .rounded-full {
@@ -933,8 +965,8 @@ video {
   padding-left: 0.75rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
 .pt-1 {
@@ -1090,9 +1122,9 @@ video {
   position: absolute;
 }
 
-.after\:left-\[95px\]::after {
+.after\:left-\[3px\]::after {
   content: var(--tw-content);
-  left: 95px;
+  left: 3px;
 }
 
 .after\:top-\[9\.5px\]::after {
