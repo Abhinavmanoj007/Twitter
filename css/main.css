@@ -584,10 +584,6 @@ video {
   pointer-events: none;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -602,10 +598,6 @@ video {
 
 .inset-y-0 {
   top: 0px;
-  bottom: 0px;
-}
-
-.bottom-0 {
   bottom: 0px;
 }
 
@@ -695,6 +687,10 @@ video {
   height: 100vh;
 }
 
+.w-1\/5 {
+  width: 20%;
+}
+
 .w-11 {
   width: 2.75rem;
 }
@@ -723,16 +719,8 @@ video {
   width: 24px;
 }
 
-.w-\[250px\] {
-  width: 250px;
-}
-
 .w-\[27px\] {
   width: 27px;
-}
-
-.w-\[350px\] {
-  width: 350px;
 }
 
 .w-\[37px\] {
@@ -1230,37 +1218,11 @@ video {
     display: flex;
   }
 
+  .md\:w-3\/5 {
+    width: 60%;
+  }
+
   .md\:w-\[1150px\] {
     width: 1150px;
-  }
-
-  .md\:w-\[542px\] {
-    width: 542px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:fixed {
-    position: fixed;
-  }
-
-  .lg\:absolute {
-    position: absolute;
-  }
-
-  .lg\:relative {
-    position: relative;
-  }
-
-  .lg\:left-\[250px\] {
-    left: 250px;
-  }
-
-  .lg\:right-\[116px\] {
-    right: 116px;
-  }
-
-  .lg\:top-0 {
-    top: 0px;
   }
 }
