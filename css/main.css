@@ -605,44 +605,16 @@ video {
   bottom: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
 
-.left-40 {
-  left: 10rem;
-}
-
-.left-64 {
-  left: 16rem;
-}
-
-.right-40 {
-  right: 10rem;
-}
-
 .top-0 {
   top: 0px;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
-.left-1 {
-  left: 0.25rem;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.right-0\.5 {
-  right: 0.125rem;
 }
 
 .mx-auto {
@@ -1264,5 +1236,31 @@ video {
 
   .md\:w-\[542px\] {
     width: 542px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:fixed {
+    position: fixed;
+  }
+
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:left-\[250px\] {
+    left: 250px;
+  }
+
+  .lg\:right-\[116px\] {
+    right: 116px;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
   }
 }

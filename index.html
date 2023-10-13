@@ -17,12 +17,12 @@
     <!-- MAIN DIV -->
     <div class="dark:bg-gray-900">
       <div
-        class="h-screen relative md:w-[1150px] bg-white dark:bg-gray-900 mx-auto container w-full dark:text-darkFont"
+        class="h-screen lg:relative md:w-[1150px] bg-white dark:bg-gray-900 mx-auto container w-full dark:text-darkFont"
       >
         <!-- LEFT SIDEBAR -->
 
         <aside
-          class="hidden absolute left-1 top-0 md:flex p-2.5 w-[250px] h-full font-roboto text-[1.2rem] font-normal text-black dark:text-darkFont flex-col border-r dark:border-r-gray-800 gap-6"
+          class="hidden fixed bottom-0 top-0 md:flex p-2.5 w-[250px] h-full font-roboto text-[1.2rem] font-normal text-black dark:text-darkFont flex-col border-r dark:border-r-gray-800 gap-6"
           id="left"
         >
           <div class="">
@@ -209,10 +209,151 @@
             </svg>
           </div>
         </aside>
+        <!-- RIGHT SIDE -->
+        <aside
+          class="lg:fixed lg:top-0 bottom-0 lg:right-[116px] hidden md:flex w-[350px] h-full pt-1 pl-5 text-black dark:text-darkFont flex-col gap-6 border-l dark:border-l-gray-800"
+          id="right"
+        >
+          <form>
+            <label
+              for="default-search"
+              class="mb-2 text-sm font-medium text-gray-900 dark:text-darkFont sr-only"
+              >Search</label
+            >
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                class="block w-full p-3 pl-10 text-sm text-darkGray rounded-full bg-gray-100 dark:bg-gray-800"
+                placeholder="Search"
+                required
+              />
+            </div>
+          </form>
+          <div class="overflow-auto no-scrollbar flex flex-col gap-3">
+            <div
+              class="bg-xxlightGray dark:bg-gray-800 p-3 rounded-xl flex flex-col gap-2"
+            >
+              <h1 class="font-bold text-lg">Subscribe to Premium</h1>
+              <h3 class="text-sm font-bold">
+                Subscribe to unlock new features and if eligible, receive a
+                share of ads revenue.
+              </h3>
+
+              <button
+                class="text-white bg-black dark:bg-blue dark:text-darkFont font-bold rounded-full text-sm py-1.5 px-4 self-start"
+              >
+                Subscribe
+              </button>
+            </div>
+            <!-- BELOW SUBSCRIPTION -->
+            <div
+              class="bg-xxlightGray dark:bg-gray-800 p-3 rounded-lg flex flex-col gap-6 justify-between"
+            >
+              <h1 class="font-bold text-xl">What's happening</h1>
+              <div class="flex justify-between">
+                <div>
+                  <h2 class="text-lightGray text-xs">NFL.LIVE</h2>
+                  <h2 class="font-bold">Jaguars at Bills</h2>
+                </div>
+                <img
+                  class="w-[60px] h-[60px] rounded-lg"
+                  src="./img/cSidebar.jpeg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 class="font-bold">#TheBigBillionDays</h1>
+                <h2 class="text-darkGray">
+                  Grab latest deals on India's Craziest Sale<br />(8th to 15th
+                  Oct)<span class="text-blue">#SaleIsLive</span>
+                </h2>
+                <p class="text-xs text-darkGray">Promoted by Flipkart</p>
+              </div>
+              <div class="flex justify-between">
+                <div>
+                  <p class="text-xs text-darkGray">Politics.Trending</p>
+                  <h3 class="font-bold">#Israel</h3>
+                  <p class="text-xs text-darkGray">2.04M posts</p>
+                </div>
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="dark:fill-darkFont w-[22px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
+                >
+                  <g>
+                    <path
+                      d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="flex justify-between">
+                <div>
+                  <p class="text-xs text-darkGray">Sports.Trending</p>
+                  <h3 class="font-bold">#ViratKohli𓃵</h3>
+                  <p class="text-xs text-darkGray">
+                    Trending with Chase Master
+                    <span class="text-blue">#CWC23</span>
+                  </p>
+                </div>
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="dark:fill-darkFont w-[22px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
+                >
+                  <g>
+                    <path
+                      d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="flex justify-between">
+                <div>
+                  <p class="text-xs text-darkGray">Politics.Trending</p>
+                  <h3 class="font-bold">#IsraelPalestineWar</h3>
+                  <p class="text-xs text-darkGray">133K posts</p>
+                </div>
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="dark:fill-darkFont w-[22px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
+                >
+                  <g>
+                    <path
+                      d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <h1 class="text-blue">Show more</h1>
+            </div>
+          </div>
+        </aside>
 
         <!-- MIDDLE ITEMS -->
         <main
-          class="md:w-[542px] w-full h-full font-roboto absolute top-0 left-64"
+          class="md:w-[542px] w-full h-full font-roboto lg:absolute lg:top-0 lg:left-[250px]"
           id="middle "
         >
           <div class="">
@@ -485,147 +626,7 @@
             </div>
           </div>
         </main>
-        <!-- RIGHT SIDE -->
-        <aside
-          class="absolute top-0 right-0.5 hidden md:flex w-[350px] h-full pt-1 pl-5 text-black dark:text-darkFont flex-col gap-6 border-l dark:border-l-gray-800"
-          id="right"
-        >
-          <form>
-            <label
-              for="default-search"
-              class="mb-2 text-sm font-medium text-gray-900 dark:text-darkFont sr-only"
-              >Search</label
-            >
-            <div class="relative">
-              <div
-                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  class="w-4 h-4 text-gray-500"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </div>
-              <input
-                type="search"
-                id="default-search"
-                class="block w-full p-3 pl-10 text-sm text-darkGray rounded-full bg-gray-100 dark:bg-gray-800"
-                placeholder="Search"
-                required
-              />
-            </div>
-          </form>
-          <div class="overflow-auto no-scrollbar flex flex-col gap-3">
-            <div
-              class="bg-xxlightGray dark:bg-gray-800 p-3 rounded-xl flex flex-col gap-2"
-            >
-              <h1 class="font-bold text-lg">Subscribe to Premium</h1>
-              <h3 class="text-sm font-bold">
-                Subscribe to unlock new features and if eligible, receive a
-                share of ads revenue.
-              </h3>
-
-              <button
-                class="text-white bg-black dark:bg-blue dark:text-darkFont font-bold rounded-full text-sm py-1.5 px-4 self-start"
-              >
-                Subscribe
-              </button>
-            </div>
-            <!-- BELOW SUBSCRIPTION -->
-            <div
-              class="bg-xxlightGray dark:bg-gray-800 p-3 rounded-lg flex flex-col gap-6 justify-between"
-            >
-              <h1 class="font-bold text-xl">What's happening</h1>
-              <div class="flex justify-between">
-                <div>
-                  <h2 class="text-lightGray text-xs">NFL.LIVE</h2>
-                  <h2 class="font-bold">Jaguars at Bills</h2>
-                </div>
-                <img
-                  class="w-[60px] h-[60px] rounded-lg"
-                  src="./img/cSidebar.jpeg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h1 class="font-bold">#TheBigBillionDays</h1>
-                <h2 class="text-darkGray">
-                  Grab latest deals on India's Craziest Sale<br />(8th to 15th
-                  Oct)<span class="text-blue">#SaleIsLive</span>
-                </h2>
-                <p class="text-xs text-darkGray">Promoted by Flipkart</p>
-              </div>
-              <div class="flex justify-between">
-                <div>
-                  <p class="text-xs text-darkGray">Politics.Trending</p>
-                  <h3 class="font-bold">#Israel</h3>
-                  <p class="text-xs text-darkGray">2.04M posts</p>
-                </div>
-                <svg
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  class="dark:fill-darkFont w-[22px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
-                >
-                  <g>
-                    <path
-                      d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-              <div class="flex justify-between">
-                <div>
-                  <p class="text-xs text-darkGray">Sports.Trending</p>
-                  <h3 class="font-bold">#ViratKohli𓃵</h3>
-                  <p class="text-xs text-darkGray">
-                    Trending with Chase Master
-                    <span class="text-blue">#CWC23</span>
-                  </p>
-                </div>
-                <svg
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  class="dark:fill-darkFont w-[22px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
-                >
-                  <g>
-                    <path
-                      d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-              <div class="flex justify-between">
-                <div>
-                  <p class="text-xs text-darkGray">Politics.Trending</p>
-                  <h3 class="font-bold">#IsraelPalestineWar</h3>
-                  <p class="text-xs text-darkGray">133K posts</p>
-                </div>
-                <svg
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  class="dark:fill-darkFont w-[22px] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi"
-                >
-                  <g>
-                    <path
-                      d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-              <h1 class="text-blue">Show more</h1>
-            </div>
-          </div>
-        </aside>
+        
       </div>
     </div>
   </body>
